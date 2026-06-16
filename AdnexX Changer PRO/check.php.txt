@@ -1,0 +1,23 @@
+<?php
+$conn = new mysqli("localhost", "your_db_user", "your_db_pass", "mac_license");
+
+$hw = $_GET['hw'] ?? '';
+$key = $_GET['key'] ?? '';
+
+if (empty($hw) || empty($key)) {
+    echo "INVALID";
+    exit;
+}
+
+$hw = $conn->real_escape_string($hw);
+$key = $conn->real_escape_string($key);
+
+$sql = "SELECT * FROM licenses WHERE hardware_id='$hw' AND activation_key='$key' AND status='active'";
+$result = $conn->query($sql);
+
+if ($result->num_rows > 0) {
+    echo "VALID";
+} else {
+    echo "INVALID";
+}
+?>

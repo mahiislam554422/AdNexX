@@ -1,0 +1,79 @@
+<?php
+// ================== ADMIN PASSWORD (অবশ্যই চেঞ্জ করুন) ==================
+$admin_pass = "EdGe@@#43221";   // এটাকে খুব শক্তিশালী করুন
+
+if (!isset($_GET['pass']) || $_GET['pass'] !== $admin_pass) {
+    die("<h2 style='color:red'>❌ Access Denied! Wrong Password.</h2>");
+}
+
+$conn = new mysqli("localhost", "your_db_user", "your_db_pass", "mac_license");
+
+if ($conn->connect_error) {
+    die("Connection failed: " . $conn->connect_error);
+}
+
+// নতুন কী জেনারেট
+if (isset($_POST['hw_id'])) {
+    $hw = trim($_POST['hw_id']);
+    if (!empty($hw)) {
+        $key = "ADNEXX-" . strtoupper(substr(md5($hw . time()), 0, 20));
+        
+        $sql = "INSERT INTO licenses (hardware_id, activation_key, status) 
+                VALUES ('$hw', '$key', 'active') 
+                ON DUPLICATE KEY UPDATE activation_key='$key', status='active'";
+        
+        if ($conn->query($sql)) {
+            echo "<h3 style='color:green'>✅ Key Generated Successfully!<br><b>$key</b></h3>";
+        }
+    }
+}
+
+// সব লাইসেন্স দেখান
+$result = $conn->query("SELECT * FROM licenses ORDER BY created_at DESC");
+?>
+
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <title>MAC Changer Pro - Admin Panel</title>
+    <style>
+        body { font-family: Arial; margin: 20px; background: #f4f4f4; }
+        h1 { color: #333; }
+        input { padding: 12px; width: 400px; font-size: 16px; }
+        button { padding: 12px 25px; font-size: 16px; background: #0066cc; color: white; border: none; cursor: pointer; }
+        table { width: 100%; border-collapse: collapse; margin-top: 20px; background: white; }
+        th, td { padding: 10px; border: 1px solid #ddd; text-align: left; }
+        th { background: #0066cc; color: white; }
+    </style>
+</head>
+<body>
+    <h1>MAC Address Changer Professional - Admin Panel</h1>
+    <p><strong>Developer:</strong> Sakir Rahman | <strong>Team:</strong> AdNexX</p>
+
+    <h2>New License Generate</h2>
+    <form method="POST">
+        <input type="text" name="hw_id" placeholder="Paste Hardware ID here" required>
+        <button type="submit">Generate Activation Key</button>
+    </form>
+
+    <hr>
+    <h2>All Licenses</h2>
+    <table>
+        <tr>
+            <th>Hardware ID</th>
+            <th>Activation Key</th>
+            <th>Status</th>
+            <th>Date</th>
+        </tr>
+        <?php while($row = $result->fetch_assoc()): ?>
+        <tr>
+            <td><?php echo htmlspecialchars($row['hardware_id']); ?></td>
+            <td><strong><?php echo $row['activation_key']; ?></strong></td>
+            <td><?php echo $row['status']; ?></td>
+            <td><?php echo $row['created_at']; ?></td>
+        </tr>
+        <?php endwhile; ?>
+    </table>
+</body>
+</html>

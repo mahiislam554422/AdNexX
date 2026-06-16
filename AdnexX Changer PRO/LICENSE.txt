@@ -1,0 +1,119 @@
+========================================
+SOFTWARE LICENSE AGREEMENT
+========================================
+
+MAC Address Changer Professional
+Version 20.26
+
+Developer: Sakir Rahman
+Team: AdNexX
+Telegram: https://t.me/rabbihasan343
+========================================
+END USER LICENSE AGREEMENT (EULA)
+========================================
+
+IMPORTANT - READ CAREFULLY:
+
+This Software License Agreement ("Agreement") is a legal agreement between you (either an individual or a single entity) and AdNexX Team for the software product identified above, which includes computer software and may include associated media, printed materials, and "online" or electronic documentation ("SOFTWARE PRODUCT").
+
+By installing, copying, or otherwise using the SOFTWARE PRODUCT, you agree to be bound by the terms of this Agreement.
+
+========================================
+1. GRANT OF LICENSE
+========================================
+
+AdNexX Team grants you the following rights:
+
+- Installation and Use: You may install and use one copy of the SOFTWARE PRODUCT on a single computer.
+- Backup Copy: You may make one backup copy of the SOFTWARE PRODUCT.
+
+========================================
+2. LICENSE ACTIVATION
+========================================
+
+- The SOFTWARE PRODUCT requires a valid license key for full functionality.
+- Free trial allows 1 MAC address change.
+- Premium license required for unlimited use.
+- License keys are machine-specific and non-transferable.
+- Contact AdNexX Admin for license purchase: https://t.me/rabbihasan343
+
+========================================
+3. RESTRICTIONS
+========================================
+
+You may NOT:
+- Reverse engineer, decompile, or disassemble the SOFTWARE PRODUCT
+- Distribute or sell license keys without authorization
+- Remove any copyright or proprietary notices
+- Share license generator tools
+- Use for illegal purposes
+- Rent, lease, or lend the SOFTWARE PRODUCT
+
+========================================
+4. COPYRIGHT
+========================================
+
+All title and copyrights in and to the SOFTWARE PRODUCT (including but not limited to any images, photographs, animations, video, audio, music, text, and "applets" incorporated into the SOFTWARE PRODUCT) are owned by AdNexX Team or its suppliers.
+
+The SOFTWARE PRODUCT is protected by copyright laws and international treaty provisions.
+
+========================================
+5. LIMITED WARRANTY
+========================================
+
+AdNexX Team warrants that the SOFTWARE PRODUCT will perform substantially in accordance with the accompanying materials for a period of 30 days from the date of receipt.
+
+The SOFTWARE PRODUCT is provided "AS IS" without warranty of any kind.
+
+========================================
+6. LIMITATION OF LIABILITY
+========================================
+
+In no event shall AdNexX be liable for any damages whatsoever (including, without limitation, damages for loss of business profits, business interruption, loss of business information, or any other pecuniary loss) arising out of the use of or inability to use this SOFTWARE PRODUCT.
+
+========================================
+7. TERMINATION
+========================================
+
+Without prejudice to any other rights, AdNexX Team may terminate this Agreement if you fail to comply with the terms and conditions.
+
+========================================
+8. ACCEPTABLE USE
+========================================
+
+This software is intended for:
+- Authorized network administration
+- Educational purposes
+- System testing and troubleshooting
+- Legal MAC address management
+
+This software is NOT for:
+- Illegal network access
+- Identity theft
+- Unauthorized system access
+- Malicious activities
+
+========================================
+9. CONTACT INFORMATION
+========================================
+
+For license purchases, technical support, or questions:
+
+Developer: Sakir
+Team: AdNexX
+Telegram: https://t.me/rabbihasan343
+========================================
+10. GOVERNING LAW
+========================================
+
+This Agreement shall be governed by the laws of Bangladesh.
+
+========================================
+
+By installing this software, you acknowledge that you have read this Agreement, understand it, and agree to be bound by its terms and conditions.
+
+© 2026 AdNexX Team. All rights reserved.
+
+Developer: Sakir Rahman
+AdNexX Admin: Rabbi Hasan
+WhatsApp: +8801883694470
